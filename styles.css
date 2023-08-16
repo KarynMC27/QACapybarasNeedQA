@@ -1,0 +1,488 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #67aae5;
+    color: rgb(28, 28, 87);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #091678;
+    font-family: Lilita One, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-family: Manrope, serif;
+}
+
+footer {
+    background-color: #9ebbd5;
+    font-family: Indie Flower, sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+li {
+    padding: 5px;
+    font-family: Manrope, serif;
+}
+
+strong {
+    font-family: Lilita One, sans-serif;
+    size: 1em;
+    white-space: nowrap;
+}
+
+.cta {
+    background-color: rgb(16, 16, 53);
+    width: 12em;
+    height: 3em;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* index page styles */
+
+.body_container {
+    margin: 30px 30px 0px 30px
+}
+
+.hero_container {
+    border: 3px double navy;
+    border-bottom-style: dotted;
+ }
+
+ .main_container {
+    background-color: #c298d3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 1%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+.hero_bg_image {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.hero_bg_image::after {
+    content: "";
+    background-image: url("images/mammal-3219344_1280.jpg");
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    resize: both;
+    height: 30em;
+    opacity: .8;
+}
+
+.index_h2 {
+    font-family: Lilita One, sans-serif;
+    color:#091678;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.index_p {
+    font-family: Manrope, serif;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.index_mice_type {
+    font-size: .75em;
+    font-style: italic;
+}
+
+.slide_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.slide_image_container img {
+     border-radius: 50%;
+     max-width: 200px;
+}
+
+.capy_image {
+    height:auto;
+    width: auto;
+    display: block;
+    position: relative;
+    border: 30px solid navy;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.capy_image:hover {
+    height:auto;
+    width: auto;
+    display: block;
+    position: relative;
+    border: 30px solid navy;
+    border-radius: 50%;
+    opacity: 100%;
+}
+
+.capy_image_text {
+    font-family: Lilita One, sans-serif;
+    color: rgb(223, 203, 203);
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    background-color: #dc9daf;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #766f9f;
+  }
+
+#hero_header {
+    text-align: center;
+    font-size: 3em;
+    background-color: #091678;
+    background-image: linear-gradient(45deg, #9497ca, #dc9daf);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 0px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 3px navy;
+} 
+
+#header_text {
+    text-align: center;
+    color: rgb(28, 28, 87);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+    margin:20px;
+}
+
+/* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    background-color: #dc9daf;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #766f9f;
+  } */
+  
+  /* Fading animation */
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  } 
+
+/* form styles */
+
+.form_container {
+    font-family: Manrope, serif;
+    color: rgb(28, 28, 87);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    font-size: 1em;
+    background-color: #9ebbd5;
+    padding: 40px 0px 50px 0px;
+    border: 3px double navy;
+    border-top-style: dotted;
+    margin: 0px 30px 30px 30px;
+}
+
+.valid-feedback, .invalid-feedback {
+    font-family: Indie Flower, serif;
+    font-size: 1em;
+}
+
+.row {
+    margin: 10px;
+}
+
+.col-md-6, .col-md-4, .col-md-3, .col-12 {
+    margin: 5px;
+}
+
+.btn.btn-primary.cta {
+    display: block;
+    border-color: navy;
+    padding: 12px 0px 0px 5px;
+    position: relative;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.btn.btn-primary.cta:hover {
+    background-color:#091678;
+}
+
+
+#form_link {
+    font-family: Lilita One, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    background-color: #091678;
+    background-image: linear-gradient(45deg, #9185d9, #dc9daf);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    bottom: 20px;
+    right: 2px;
+
+}
+
+#form_link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 5.25em;
+    height: 3px;
+    border-radius: 2px;
+    background-image: linear-gradient(45deg, 9185d9, #dc9daf);
+}
+
+/* rules page styles */
+
+.bg_rules_image {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-bottom: 3px double navy;
+}
+
+.bg_rules_image::after {
+    content: "";
+    background-image: url("images/capybara-6091872_1280.jpg");
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    resize: both;
+    height: 30em;
+    opacity: 1;
+}
+
+.cta_rules {
+    background-color: rgb(16, 16, 53);
+    width: 12em;
+    height: 3em;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta_rules:hover {
+    background-color:#7f5070 !important;
+}
+
+.lunar_link {
+    color:rgb(28, 28, 87);
+    text-decoration: none;
+}
+
+#rules_header {
+    text-align: center;
+    font-size: 3em;
+    background-color: #091678;
+    background-image: linear-gradient(45deg, #201174, #dc9daf);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: .5px rgb(71, 23, 80);
+}
+
+#rules_container {
+    border: 3px double navy;
+    border-radius: 5px;
+    background-color:#9ebbd5;
+    margin: 30px;
+    text-align: left;
+}
+
+#rules_link {
+    font-family: Lilita One, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    background-color: #091678;
+    background-image: linear-gradient(45deg, #201174, #dc9daf);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#rules_link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 5em;
+    height: 3px;
+    border-radius: 2px;
+    background-image: linear-gradient(45deg, #201174, #dc9daf);
+}
+
+
+
+
+/* thank you page styles */
+
+.bg_image {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.bg_image::after {
+    content: "";
+    background-image: url("images/mammal-3219344_1280.jpg");
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    resize: both;
+    height: 50em;
+    opacity: .8;
+}
+
+#ty_header {
+    text-align: center;
+    font-size: 3em;
+    background-color: #091678;
+    background-image: linear-gradient(45deg, #201174, #dc9daf);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 0px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 1px navy; 
+} 
+
+#ty_container {
+    border: 1px solid navy;
+    border-radius: 5px;
+    background-color:#9ebbd5;
+    margin: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#ty_text {
+    text-align: center;
+    color: rgb(28, 28, 87);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+}
+
+
+#ty_footer {
+   font-size: .01em;
+   color: black;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 768px) {
+    .slide_image_container img {
+        border-radius: 50%;
+        max-width: 900px;
+   }
+
+   .capy_image_text {
+        font-family: Lilita One, sans-serif;
+        color: white;
+        position: absolute;
+        top: 80%;
+        left: 60%;
+        /* -webkit-text-stroke: 1px navy; */
+    }
+
+    .main_container {
+        margin: 20px;
+     }
+
+    .dot {
+        margin: 10px;
+      }
+
+    #hero_header {
+        font-size: 4em;
+    }
+
+
+    #ty_header {
+        font-size: 4em;
+    } 
+
+    .btn.btn-primary.cta {
+        margin-top: 20px;
+    }
+    
+    .bg_image::after {
+        content: "";
+        background-image: url("images/mammal-3219344_1280.jpg");
+        background-color: purple;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        resize: both;
+        height: 50em;
+        opacity: .5;
+    }
+   
+}
